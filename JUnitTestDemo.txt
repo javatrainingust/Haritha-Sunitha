@@ -1,0 +1,28 @@
+package com.training.util;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest {
+
+	@Test
+	void testAdd() {
+		
+		int expected=7;
+		Calculator calc= new Calculator();
+		int actual = calc.add(4,3);
+		assertEquals(expected, actual);
+		
+	}
+
+	@Test
+	void testSubtract() {
+		
+		int expected=8;
+		Calculator calc= new Calculator();
+		int actual = calc.subtract(10,2);
+		assertEquals(expected, actual);
+	}
+
+}
